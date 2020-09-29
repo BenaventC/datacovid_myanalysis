@@ -5,10 +5,11 @@ date: "27/09/2020"
 output:
   html_document: default
 ---
+![source : https://streetarts.blog/2020/05/16/bas-les-masques/](maskNYnurse.jpg)
 
 ## 0 - Libraries de travail
 
-```{r setup, include=FALSE, echo=TRUE}
+```{r setup, include=TRUE, echo=TRUE}
 knitr::opts_chunk$set(echo = TRUE,message=FALSE,warning = FALSE, cache=TRUE)
 library(tidyverse) #le canif suisse de la datascience
 library(reshape2) #passer d'un fichier large à long
@@ -135,7 +136,7 @@ ggplot(foo,aes(x=VAGUE2 ,y=frequence,group=variable))+geom_line(aes(color=variab
 
 ```
 
-### corrélations entre les préoccupations
+### Corrélations entre les préoccupations
 
 Examinons les corrélations entre ces éléments
 
@@ -154,6 +155,10 @@ corrplot.mixed(r, order = "hclust", addrect = 4, lower.col = "black", number.cex
 ```
 
 Une autre manière est d'utiliser une méthode de clustering et de MDS sur une distance définie comme le nombre d'individus qui cite les items ensembles. C'ets pourquoi on utilise un indice de distance binaire de type jaccard. 
+
+Pour les méthodes typologiques [voir par ex](https://sites.google.com/site/rgraphiques/4--stat/clustering-hierarchique) 
+
+Pour l'analyse muldidimensionnelle des [proximités voir par ex] (http://www.normalesup.org/~carpenti/Notes/MDS/MDS-simple.html)
 
 ```{r fa2}
 
@@ -345,7 +350,10 @@ ggplot(foo,aes(x=VAGUE2,fill=value))+
 
 ```
 
-###une Analyse en détail
+### Une Analyse en détail
+
+Une typologie k-means pour les groupes d'individus. 
+
 
 ```{r obs2,fig.width=10}
 
@@ -383,13 +391,13 @@ donc 4 stratégies (ensemble d'actions coordonnées dans un but)
  * distance sociale, 
  * isolement ou retrait
  
-## un modèle pour l'observance du masque
+## Un modèle pour l'observance du masque
 
-la perception de la gravité
-Le degré de santé mentale
-la proximité 
+ * la perception de la gravité
+ * Le degré de santé mentale
+ * La proximité du virus
 
-un contrôle par les vagues d'enquêtes
+Un contrôle par les vagues d'enquêtes
 
 ```{r obs3}
 df<-df %>% 

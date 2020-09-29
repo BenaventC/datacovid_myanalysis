@@ -1,0 +1,9 @@
+{
+    "path" : "~/covid/DataIpsos/datacovid_myanalysis",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

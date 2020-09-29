@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1601389069423.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1499817978",
+    "id" : "519C74AF",
+    "lastKnownWriteTime" : 1601390547,
+    "last_content_update" : 1601390547762,
+    "path" : "~/covid/DataIpsos/datacovid_myanalysis/dataprocess.Rmd",
+    "project_path" : "dataprocess.Rmd",
+    "properties" : {
+        "cursorPosition" : "137,0",
+        "scrollLine" : "126"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
