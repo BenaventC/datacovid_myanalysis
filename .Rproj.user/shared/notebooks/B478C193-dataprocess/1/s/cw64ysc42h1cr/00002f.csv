@@ -1,0 +1,7 @@
+"0","#library(corrplot)"
+"0",""
+"0","for (i in 1:8){"
+"0","foo<-df  %>% filter(VAGUE==i)%>%select(p_01,p_02,p_03, p_04,p_05,p_06,p_07,p_08,p_09,p_10) %>% rename(Epidemie=p_01,PouvoirAchat=p_02,Climat=p_03,Inegalites=p_04,Chomage=p_05, Dette=p_06,Education=p_07,Sante=p_08,Insecurite=p_09, Terrorisme=p_10)"
+"0","r<-cor(foo)"
+"0","corrplot.mixed(r, lower.col = ""black"", number.cex = .7)"
+"0","}"

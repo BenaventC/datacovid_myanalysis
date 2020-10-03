@@ -1,0 +1,3 @@
+"0",""
+"0","g_e<-ggplot(df,aes(x= A2a,y=Masque,group=VAGUE2))+geom_smooth(aes(color=VAGUE2),method=lm)+labs(title=""Obs. et distance"", x=""Degré de distance du virus"",y=""Observance"")+scale_color_brewer(palette = ""RdBu"")+  theme_minimal()   +ylim(3,5)"
+"0","g_e"

@@ -20,3 +20,4 @@ kableExtra
 Matrix
 lme4
 gridExtra
+broom

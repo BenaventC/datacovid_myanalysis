@@ -1,0 +1,124 @@
+"0",""
+"0","foo<-df  %>% select(VAGUE2,B1Q,REGION)"
+"0","foo$VAGUE2<-factor(foo$VAGUE2, ordered = FALSE ) #beaucause before ordered"
+"0","foo$REGION<-factor(foo$REGION, ordered = FALSE )"
+"0",""
+"0","m1<-lm(B1Q~REGION+VAGUE2,data=foo)"
+"0","anova(m1)"
+"1","Analysis of Variance Table
+"
+"1","
+"
+"1","Response: B1Q"
+"1","
+"
+"1","         "
+"1","    Df"
+"1"," Sum Sq"
+"1"," Mean Sq"
+"1","  F value"
+"1","    Pr(>F)"
+"1","    "
+"1","
+REGION   "
+"1","    11"
+"1","    283"
+"1","   25.73"
+"1","   7.0792"
+"1"," 3.916e-12"
+"1"," ***"
+"1","
+VAGUE2   "
+"1","     7"
+"1","  13049"
+"1"," 1864.07"
+"1"," 512.8863"
+"1"," < 2.2e-16"
+"1"," ***"
+"1","
+Residuals"
+"1"," 39982"
+"1"," 145314"
+"1","    3.63"
+"1","         "
+"1","          "
+"1","    "
+"1","
+"
+"1","---
+Signif. codes:  "
+"1",""
+"1","0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1"
+"1","
+"
+"0","summ(m1)"
+"1","[4mMODEL INFO:[24m"
+"1",""
+"1","
+"
+"1",""
+"1","[3mObservations:[23m"
+"1",""
+"1"," "
+"1",""
+"1","40001"
+"1",""
+"1","
+"
+"1",""
+"1","[3mDependent Variable:[23m"
+"1",""
+"1"," "
+"1",""
+"1","B1Q"
+"1",""
+"1","
+"
+"1","[3mType:[23m"
+"1"," "
+"1","OLS linear regression"
+"1"," "
+"1","
+
+"
+"1","[4mMODEL FIT:[24m"
+"1",""
+"1","
+"
+"1","[3mF[23m(18,39982) = 203.78, [3mp[23m = 0.00
+[3mR² = [23m0.08
+[3mAdj. R² = [23m0.08"
+"1"," "
+"1","
+
+"
+"1","[3mStandard errors: OLS[23m"
+"1",""
+"1","
+"
+"1","------------------------------------------------------------------
+                                       Est.   S.E.   t val.      p
+----------------------------------- ------- ------ -------- ------
+(Intercept)                            8.52   0.03   252.26   0.00
+REGIONCentre-Val de Loire              0.05   0.05     0.91   0.36
+REGIONBourgogne-Franche-ComtÃ©         0.00   0.05     0.07   0.94
+REGIONNormandie                       -0.03   0.05    -0.63   0.53
+REGIONHauts-de-France                  0.15   0.04     3.95   0.00
+REGIONGrand-Est                        0.02   0.04     0.46   0.64
+REGIONPays de la Loire                -0.08   0.04    -1.79   0.07
+REGIONBretagne                        -0.02   0.05    -0.36   0.72
+REGIONNouvelle Aquitaine              -0.01   0.04    -0.28   0.78
+REGIONOccitanie                       -0.02   0.04    -0.52   0.60
+REGIONAuvergne-RhÃ´ne-Alpes           -0.15   0.04    -4.29   0.00
+REGIONPACA + Corse                    -0.17   0.04    -4.15   0.00
+VAGUE215-22 avril                     -0.19   0.04    -5.01   0.00
+VAGUE223-30 avril                     -0.38   0.04    -9.88   0.00
+VAGUE21-8 mai                         -0.34   0.04    -8.84   0.00
+VAGUE29-16 mai                        -0.67   0.04   -17.58   0.00
+VAGUE217-24 mai                       -0.82   0.04   -21.58   0.00
+VAGUE224-31 mai                       -1.37   0.04   -35.97   0.00
+VAGUE201-6 juin                       -1.78   0.04   -46.58   0.00
+------------------------------------------------------------------"
+"1","
+"
+"0","plot_summs(m1, scale = TRUE)"

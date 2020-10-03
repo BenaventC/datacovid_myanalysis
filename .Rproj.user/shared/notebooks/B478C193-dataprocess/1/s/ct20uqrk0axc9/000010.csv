@@ -1,0 +1,3 @@
+"0","G5<-effect_plot(fit4,Gravity,int.type = ""confidence"")+ylim(1,5)+labs(y =""Observance du port du masque"")"
+"0","G6<-effect_plot(fit4,SanteMentale,int.type = ""confidence"")+ylim(1,5)+labs(y =""Observance du port du masque"")"
+"0","grid.arrange(G5,G6,ncol=2)"

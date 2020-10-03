@@ -1,0 +1,71 @@
+"0","export_summs(fit1,fit2,fit3,fit4, scale = FALSE,digits=3,model.names = c(""Gravité perçue(lm)"",""Avec contrôle\n vague d'enquête (lm)"",""Avec contrôle \ndes variables de position sociale (lm)"", ""et contrôle des CSP""))"
+"1","                     ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+                                              Gravité perçue(lm)     Avec contrôle vague   Avec contrôle des variables de   et contrôle des CSP  
+                                                                          d'enquête (lm)            position sociale (lm)                        
+                                            ─────────────────────────────────────────────────────────────────────────────────────────────────────
+                       (Intercept)                     1.679 ***               1.934 ***                        1.824 ***             1.888 ***  
+                                                      (0.053)                 (0.135)                          (0.136)               (0.137)     
+                       Gravity                         0.130 ***               0.099 ***                        0.102 ***             0.090 ***  
+                                                      (0.004)                 (0.016)                          (0.016)               (0.016)     
+                       SanteMentale                   -0.007 **               -0.026 **                        -0.021 *              -0.024 *    
+                                                      (0.002)                 (0.010)                          (0.010)               (0.010)     
+                       VAGUE215-22 avril               0.349 ***               0.349 ***                        0.351 ***             0.345 ***  
+                                                      (0.030)                 (0.030)                          (0.031)               (0.030)     
+                       VAGUE223-30 avril               0.744 ***               0.744 ***                        0.744 ***             0.739 ***  
+                                                      (0.030)                 (0.030)                          (0.031)               (0.031)     
+                       VAGUE21-8 mai                   1.019 ***               1.019 ***                        1.023 ***             1.012 ***  
+                                                      (0.030)                 (0.030)                          (0.031)               (0.030)     
+                       VAGUE29-16 mai                  1.400 ***               1.401 ***                        1.404 ***             1.390 ***  
+                                                      (0.031)                 (0.031)                          (0.031)               (0.031)     
+                       VAGUE217-24 mai                 2.016 ***               2.016 ***                        2.022 ***             2.014 ***  
+                                                      (0.031)                 (0.031)                          (0.031)               (0.031)     
+                       VAGUE224-31 mai                 2.300 ***               2.301 ***                        2.308 ***             2.292 ***  
+                                                      (0.031)                 (0.031)                          (0.031)               (0.031)     
+                       VAGUE201-6 juin                 2.386 ***               2.388 ***                        2.397 ***             2.375 ***  
+                                                      (0.031)                 (0.031)                          (0.031)               (0.031)     
+                       Gravity:SanteMentale                                    0.002 *                          0.002                 0.002 *    
+                                                                              (0.001)                          (0.001)               (0.001)     
+                       A2aNSP                                                                                   0.031                 0.061      
+                                                                                                               (0.092)               (0.091)     
+                       A2aContact                                                                               0.226 ***             0.274 ***  
+                                                                                                               (0.052)               (0.052)     
+                       A2aSymptômes                                                                             0.156 ***             0.181 ***  
+                                                                                                               (0.029)               (0.029)     
+                       A2aPositif                                                                               0.722 ***             0.791 ***  
+                                                                                                               (0.100)               (0.100)     
+                       AGE25-29                                                                                                       0.078      
+                                                                                                                                     (0.040)     
+                       AGE30-34                                                                                                       0.069      
+                                                                                                                                     (0.037)     
+                       AGE35-39                                                                                                       0.054      
+                                                                                                                                     (0.037)     
+                       AGE40-44                                                                                                       0.044      
+                                                                                                                                     (0.037)     
+                       AGE45-49                                                                                                       0.098 **   
+                                                                                                                                     (0.036)     
+                       AGE50-54                                                                                                       0.080 *    
+                                                                                                                                     (0.037)     
+                       AGE55-59                                                                                                       0.129 ***  
+                                                                                                                                     (0.038)     
+                       AGE60-64                                                                                                       0.165 ***  
+                                                                                                                                     (0.036)     
+                       AGE65+                                                                                                         0.282 ***  
+                                                                                                                                     (0.031)     
+                       SEXEHomme                                                                                                     -0.169 ***  
+                                                                                                                                     (0.016)     
+                                            ─────────────────────────────────────────────────────────────────────────────────────────────────────
+                       N                           39778                   39778                            39339                 39339          
+                       R2                              0.223                   0.223                            0.226                 0.230      
+                     ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+                       *** p < 0.001; ** p < 0.01; * p < 0.05.                                                                                   
+
+Column names: names, Gravité perçue(lm), Avec contrôle vague d'enquête (lm), Avec contrôle des variables de position sociale (lm), et contrôle des CSP
+"
+"0","             "
+"0",""
+"0",""
+"0","G1<-effect_plot(fit4,VAGUE2,int.type = ""confidence"")+labs(y =""Observance du port du masque"")+ylim(1,5)+coord_flip()"
+"0","G2<-effect_plot(fit4,SEXE,int.type = ""confidence"")+labs(y =""Observance du port du masque"")+ylim(1,5)+coord_flip()"
+"0","G3<-effect_plot(fit4,AGE,int.type = ""confidence"")+ylim(1,5)+coord_flip()+labs(y =""Observance du port du masque"")"
+"0","G4<-effect_plot(fit4,A2a,int.type = ""confidence"")+ylim(1,5)+coord_flip()+labs(y =""Observance du port du masque"")"
+"0","grid.arrange(G1,G2,G3,G4,ncol=2)"

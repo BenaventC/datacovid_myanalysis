@@ -1,0 +1,12 @@
+"0",""
+"0","fa<-fa(m,4)"
+"0","fa"
+"1","Factor Analysis using method = "
+"1"," "
+"1","minres"
+"1","
+Call: "
+"1","fa(r = m, nfactors = 4)
+"
+"1","Standardized loadings (pattern matrix) based upon correlation matrix
+"

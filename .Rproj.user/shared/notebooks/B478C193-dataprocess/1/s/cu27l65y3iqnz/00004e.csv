@@ -1,0 +1,105 @@
+"0","summ(m1)"
+"1","[4mMODEL INFO:[24m"
+"1",""
+"1","
+"
+"1",""
+"1","[3mObservations:[23m"
+"1",""
+"1"," "
+"1",""
+"1","40001"
+"1",""
+"1","
+"
+"1",""
+"1","[3mDependent Variable:[23m"
+"1",""
+"1"," "
+"1",""
+"1","B1Q"
+"1",""
+"1","
+"
+"1","[3mType:[23m"
+"1"," "
+"1","OLS linear regression"
+"1"," "
+"1","
+
+"
+"1","[4mMODEL FIT:[24m"
+"1",""
+"1","
+"
+"1","[3mF[23m(39,39961) = 134.55, [3mp[23m = 0.00
+[3mR² = [23m0.12
+[3mAdj. R² = [23m0.12"
+"1"," "
+"1","
+
+"
+"1","[3mStandard errors: OLS[23m"
+"1",""
+"1","
+"
+"1","------------------------------------------------------------------
+                                       Est.   S.E.   t val.      p
+----------------------------------- ------- ------ -------- ------
+(Intercept)                            8.27   0.08   102.22   0.00
+AGE25-29                               0.00   0.05     0.02   0.99
+AGE30-34                               0.12   0.05     2.47   0.01
+AGE35-39                               0.20   0.05     4.09   0.00
+AGE40-44                               0.33   0.05     6.93   0.00
+AGE45-49                               0.43   0.05     9.10   0.00
+AGE50-54                               0.51   0.05    10.72   0.00
+AGE55-59                               0.61   0.05    12.48   0.00
+AGE60-64                               0.68   0.05    12.58   0.00
+AGE65+                                 0.69   0.06    12.13   0.00
+SEXEHomme                             -0.44   0.02   -22.29   0.00
+VAGUE215-22 avril                     -0.20   0.04    -5.25   0.00
+VAGUE223-30 avril                     -0.38   0.04   -10.08   0.00
+VAGUE21-8 mai                         -0.37   0.04    -9.76   0.00
+VAGUE29-16 mai                        -0.69   0.04   -18.52   0.00
+VAGUE217-24 mai                       -0.82   0.04   -21.94   0.00
+VAGUE224-31 mai                       -1.38   0.04   -36.87   0.00
+VAGUE201-6 juin                       -1.79   0.04   -47.84   0.00
+relevel(PCS, ref = ""Cadres            -0.10   0.14    -0.74   0.46
+SupÃ©rieurs"")Agriculteurs                                         
+exploitants                                                       
+relevel(PCS, ref = ""Cadres            -0.07   0.06    -1.20   0.23
+SupÃ©rieurs"")Professions                                          
+IndÃ©pendantes                                                    
+relevel(PCS, ref = ""Cadres             0.14   0.04     3.76   0.00
+SupÃ©rieurs"")Professions                                          
+intermÃ©diaires                                                   
+relevel(PCS, ref = ""Cadres             0.32   0.04     8.77   0.00
+SupÃ©rieurs"")EmployÃ©s                                            
+relevel(PCS, ref = ""Cadres             0.31   0.04     7.00   0.00
+SupÃ©rieurs"")Ouvriers                                             
+relevel(PCS, ref = ""Cadres             0.28   0.05     5.62   0.00
+SupÃ©rieurs"")RetraitÃ©s                                           
+relevel(PCS, ref = ""Cadres             0.25   0.04     6.01   0.00
+SupÃ©rieurs"")Inactifs                                             
+AGGLOPetites agglo                    -0.04   0.03    -1.22   0.22
+AGGLOMoyenne agglo                    -0.02   0.03    -0.64   0.52
+AGGLOGrandes agglo                    -0.01   0.03    -0.33   0.74
+AGGLOParis                            -0.17   0.07    -2.52   0.01
+REGIONCentre-Val de Loire             -0.15   0.08    -1.96   0.05
+REGIONBourgogne-Franche-ComtÃ©        -0.18   0.07    -2.46   0.01
+REGIONNormandie                       -0.19   0.07    -2.64   0.01
+REGIONHauts-de-France                 -0.02   0.07    -0.31   0.75
+REGIONGrand-Est                       -0.14   0.07    -2.14   0.03
+REGIONPays de la Loire                -0.25   0.07    -3.55   0.00
+REGIONBretagne                        -0.21   0.07    -2.98   0.00
+REGIONNouvelle Aquitaine              -0.18   0.07    -2.71   0.01
+REGIONOccitanie                       -0.21   0.07    -3.06   0.00
+REGIONAuvergne-RhÃ´ne-Alpes           -0.30   0.07    -4.48   0.00
+REGIONPACA + Corse                    -0.36   0.07    -5.13   0.00
+------------------------------------------------------------------"
+"1","
+"
+"0","effect_plot(m1, pred = AGE, interval = TRUE, plot.points = FALSE, y.label = ""Niveau de gravité"")"
+"2","Error in relevel.default(PCS, ref = ""Cadres Supérieurs"") : 
+  'relevel' only for (unordered) factors
+"

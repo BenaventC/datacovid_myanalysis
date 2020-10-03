@@ -1,0 +1,3 @@
+"0","results<-do(fitted_models,tidy(lm(B1Q~AGE+SEXE+PCS+AGGLO+REGION,data=.)))"
+"0","foo<-results %>%mutate( var =substr(term,1,3)) %>%filter(var==""PCS"")"
+"0","ggplot(foo,aes(x=VAGUE2,y=estimate,group=term))+geom_line(aes(color=term))"

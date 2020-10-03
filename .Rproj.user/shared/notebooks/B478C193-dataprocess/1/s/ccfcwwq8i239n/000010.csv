@@ -1,0 +1,6 @@
+"0",""
+"0","foo<-melt(foo)%>% group_by(VAGUE2,REGION) %>% summarise(Gravite=mean(value))"
+"0",""
+"0","g3<-ggplot(foo,aes(x=VAGUE2 ,y=Gravite,group=REGION))+geom_line(aes(color=REGION),size=1.5)+  theme_minimal()+  labs(title = ""Perception de la gravité de l'épidémie Covid19"",x =""region"",y=""Gravité (0 à 10)"",caption = ""« Baromètre COVID 19, https://datacovid.org »"")+ scale_colour_hue(h = c(0, 90))"
+"0","g3"
+"0",""

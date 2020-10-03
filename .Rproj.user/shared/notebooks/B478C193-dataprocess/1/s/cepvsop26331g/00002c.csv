@@ -1,0 +1,4 @@
+"0","fitted_models<- foo %>% group_by(VAGUE2) "
+"0","library(broom)"
+"0",""
+"0","do(fitted_models,glance(lm(B1Q~AGE+SEXE+PCS+AGGLO+REGION,data=.)))"

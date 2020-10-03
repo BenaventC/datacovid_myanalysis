@@ -1,0 +1,2 @@
+"0","loc <- cmdscale(dist(t(foo1)) )"
+"0","plot(loc[,1], -loc[,2], type=""n"", xlab="""", ylab="""", main=""cmdscale(eurodist)"")"

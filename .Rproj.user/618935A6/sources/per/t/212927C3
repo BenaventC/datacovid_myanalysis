@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1601711922283.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "212927C3",
+    "lastKnownWriteTime" : 1594340597768,
+    "last_content_update" : 1601711922283,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "E1ECFD34",
+        "caption" : "fitted_models",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=fitted_models&cache_key=E1ECFD34",
+        "displayedObservations" : "40001",
+        "environment" : "",
+        "expression" : "fitted_models",
+        "object" : "fitted_models",
+        "preview" : "0",
+        "totalObservations" : "40001",
+        "variables" : "7"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
